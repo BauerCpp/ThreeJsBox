@@ -18,7 +18,7 @@ function Scene(props) {
         attach="background"
         args={[...color]}
       />
-      {/* <spotLight position={position} color="yellow" angle={0.9} penumbra={0.0} decay={0} intensity={Math.PI / 2 } /> */}
+      <spotLight position={position} color="yellow" angle={0.9} penumbra={0.0} decay={0} intensity={Math.PI / 2 } />
       <pointLight position={position} color="white" decay={0.1} intensity={Math.PI } />
       {/* <ambientLight intensity={0.2} />
       <directionalLight intensity={1} /> */}
