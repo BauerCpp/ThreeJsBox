@@ -16,7 +16,7 @@
 }
 
 .form_underlayer {
-  min-width: 500px;
+  min-width: 450px;
   display: flex;
   place-content: center;
   height: 100%;
