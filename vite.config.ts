@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+
 // https://vite.dev/config/
 export default defineConfig({
   base: '/ThreeJsBox',
@@ -8,4 +9,5 @@ export default defineConfig({
     outDir: './build'
   },
   plugins: [react()],
+  assetsInclude: ['**/*.JPG'],
 })

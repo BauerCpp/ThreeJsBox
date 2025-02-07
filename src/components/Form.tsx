@@ -11,6 +11,7 @@ interface SizeFormValues {
 interface SizeFormProps {
   onSubmit: (width: number, height: number, length: number) => void;
   onThemeChange: () => void;
+  initialValues: {width: number, height: number, length: number};
 }
 
 const SizeForm: React.FC<SizeFormProps> = (props) => {
@@ -85,15 +86,19 @@ const SizeForm: React.FC<SizeFormProps> = (props) => {
         </Form.Item>
 
         <Form.Item>
-          <Button type="primary" htmlType="submit">
-            Calculate
-          </Button>
+			<div className='centered'>
+        		<Button type="primary" htmlType="submit">
+        		    Calculate
+        		</Button>
+			</div>
         </Form.Item>
 
         <Form.Item>
-          <span> {'\u26AA'} </span>
-          <Switch onClick={props.onThemeChange} />
-          <span> {'\u26AB'} </span>
+		<div className='centered'>
+          <span style={labelStyle}> {'Dark'} </span>
+        	<Switch style={{margin: '0 8px'}} onClick={props.onThemeChange} />
+          <span style={labelStyle}> {'Light'} </span>
+		</div>
         </Form.Item>
       </Form>
     </div>

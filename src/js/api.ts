@@ -19,7 +19,7 @@ interface CuboidGeometryRequest {
 // Simulate an API request
 async function fetchCuboidGeometry(request: CuboidGeometryRequest): Promise<CuboidGeometryData> {
   // Simulate network latency
-  await new Promise(resolve => setTimeout(resolve, 50));
+  await new Promise(resolve => setTimeout(resolve, 3000));
 
   // Default values
   const width = request.width !== undefined ? request.width : 1;
