@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/ThreeJsBox',
   build: {
-    outDir: './build'
+    outDir: './dist'
   },
   plugins: [react()],
   assetsInclude: ['**/*.JPG'],
